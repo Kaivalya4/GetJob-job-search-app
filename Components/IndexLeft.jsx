@@ -5,12 +5,15 @@ const IndexLeft = () => {
     return (
         <form className="sticky font-poppins">
             <input
-                className="h-4 w-4 border-color4 focus:border-color3"
+                className="h-4 w-4 border-color4 focus:border-color3 cursor-pointer"
                 type="checkbox"
                 name=""
                 id="full-time"
             />
-            <label className="ml-1 font-medium text-lg" for="full-time">
+            <label
+                className="ml-1 font-medium text-lg cursor-pointer"
+                htmlFor="full-time"
+            >
                 {" "}
                 Full Time
             </label>
@@ -30,41 +33,53 @@ const IndexLeft = () => {
             </div>
             <br />
             <div className="flex flex-col justify-evenly h-36">
-                <span className="flex items-center  border-color4 border-1 border-solid">
+                <span className="flex items-center  border-color4 border-1 border-solid cursor-pointer">
                     <input
-                        className="h-5 w-5"
+                        className="h-5 w-5 cursor-pointer"
                         type="radio"
                         name="default_options"
-                        id=""
+                        id="radio1"
                     />{" "}
-                    &nbsp; Ranchi
+                    &nbsp;
+                    <label htmlFor="radio1" className="cursor-pointer">
+                        Ranchi
+                    </label>
                 </span>
-                <span className="flex items-center border-color4 border-1 border-solid">
+                <span className="flex items-center border-color4 border-1 border-solid cursor-pointer">
                     <input
-                        className="h-5 w-5"
+                        className="h-5 w-5 cursor-pointer"
                         type="radio"
                         name="default_options"
-                        id=""
+                        id="radio2"
                     />{" "}
-                    &nbsp; Banglore
+                    &nbsp;
+                    <label htmlFor="radio2" className="cursor-pointer">
+                        Banglore
+                    </label>
                 </span>
-                <span className="flex items-center border-color4 border-1 border-solid">
+                <span className="flex items-center border-color4 border-1 border-solid cursor-pointer">
                     <input
-                        className="h-5 w-5"
+                        className="h-5 w-5 cursor-pointer"
                         type="radio"
                         name="default_options"
-                        id=""
+                        id="radio3"
                     />{" "}
-                    &nbsp; Ahemdabad
+                    &nbsp;
+                    <label htmlFor="radio3" className="cursor-pointer">
+                        Ahemdabad
+                    </label>
                 </span>
-                <span className="flex items-center border-color4 border-1 border-solid">
+                <span className="flex items-center border-color4 border-1 border-solid cursor-pointer">
                     <input
-                        className="h-5 w-5"
+                        className="h-5 w-5 cursor-pointer"
                         type="radio"
                         name="default_options"
-                        id=""
+                        id="radio4"
                     />{" "}
-                    &nbsp; New York
+                    &nbsp;
+                    <label htmlFor="radio4" className="cursor-pointer">
+                        New York
+                    </label>
                 </span>
             </div>
         </form>

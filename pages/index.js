@@ -1,13 +1,11 @@
 import IndexLeft from "@/Components/IndexLeft";
 import IndexRight from "@/Components/IndexRight";
+import TotaljobContext from "@/context/totaljobContext";
 import Head from "next/head";
 import { BsBriefcase } from "react-icons/bs";
 
 export default function Home({ data }) {
-    console.log(data);
-    /*onst [totaljob, settotaljob] = useState(0);
-    const [jobs, setjobs] = useState();
-    */ return (
+    return (
         <div className="mx-3 sm:mx-20">
             <div className="search-main h-32  flex justify-center items-center">
                 <form className="h-3/6 w-11/12  1sm:w-4/6 bottom-1/2 bg-white py-4 pl-4 pr-1  flex flex-row items-center">
@@ -17,7 +15,10 @@ export default function Home({ data }) {
                         type="text"
                         placeholder="Title , companies , expertise or benefits"
                     />
-                    <button className=" p-2 1sm:basis-1/6 ml-4 bg-color2 1sm:p-4 rounded text-color3">
+                    <button
+                        className=" p-2 1sm:basis-1/6 ml-4 bg-color2 1sm:p-4 rounded text-color3 "
+                        onClick={(e) => e.preventDefault()}
+                    >
                         Search
                     </button>
                 </form>
@@ -25,7 +26,9 @@ export default function Home({ data }) {
             <br />
             <div className="p-2 flex flex-col lg:flex-row gap-x-9">
                 <IndexLeft />
-                <IndexRight />
+                <TotaljobContext.Provider value={data}>
+                    <IndexRight />
+                </TotaljobContext.Provider>
             </div>
         </div>
     );
