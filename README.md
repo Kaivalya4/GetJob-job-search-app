@@ -1,4 +1,14 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+- This is a challenge from devchallenges.io 
+- design phase completed . Working on functionality !!!!
+
+![image](https://user-images.githubusercontent.com/60978175/224504777-d251419a-289b-4216-b0d9-bc31cbc8830d.png)
+
+## Tech used
+- Next.js
+- Tailwind css
+
+# API used
+- Github jobs api was best for all the needed functionality but unfortunately its down . There are not any good alternatives . So using mock api to mimic functionality as much as possible .
 
 ## Getting Started
 
