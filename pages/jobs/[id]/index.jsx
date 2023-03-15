@@ -40,7 +40,7 @@ const index = ({ job }) => {
                 </div>
                 <br />
                 <div className=" flex gap-4">
-                    <Image src={job.avatar} width={90} height={90} alt="#" />
+                    {/* <Image src={job.avatar} width={90} height={90} alt="#" /> */}
                     <div className="flex basis-5/6 flex-col gap-4 w-9/12 text-lg">
                         <h5 className="font-bold text-color5">
                             {job.companyname}
@@ -111,7 +111,7 @@ export const getStaticProps = async (context) => {
 
 export const getStaticPaths = async () => {
     const res = await fetch(
-        "https://640c7004a3e07380e8f48952.mockapi.io/getjob/"
+        "https://640c7004a3e07380e8f48952.mockapi.io/getjob"
     );
 
     const jobs = await res.json();
@@ -120,9 +120,7 @@ export const getStaticPaths = async () => {
         return job.id;
     });
 
-    const paths = jobids.map((id) => {
-        return { params: { id: id.toString() } };
-    });
+    const paths = jobids.map((id) => ({ params: { id: id.toString() } }));
 
     return {
         paths,

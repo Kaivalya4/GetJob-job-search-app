@@ -11,6 +11,10 @@ const nextConfig = {
                 // pathname: 'arifscloud/image/upload/**',
             },
         ],
+        domains: ["https://cloudflare-ipfs.com"],
+        loader: "akamai",
+        path: " ",
+        unoptimized: true,
     },
 };
 
