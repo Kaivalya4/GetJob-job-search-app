@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .search-main {
-    background-image: url("../assets/backgroundImg.png");
+    background-image: url("/backgroundImg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
