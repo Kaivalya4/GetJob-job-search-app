@@ -34,7 +34,7 @@ export default function Home({ data }) {
     );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
     // Fetch data from external API
     const res = await fetch(
         "https://640c7004a3e07380e8f48952.mockapi.io/getjob"
