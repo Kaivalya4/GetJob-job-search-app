@@ -15,9 +15,9 @@ const nextConfig = {
         loader: "akamai",
         path: " ",
         unoptimized: true,
-        basePath: "/GetJob-job-search-app",
-        assetPrefix: "/GetJob-job-search-app",
     },
+    basePath: "/GetJob-job-search-app",
+    assetPrefix: "/GetJob-job-search-app",
 };
 
 module.exports = nextConfig;
