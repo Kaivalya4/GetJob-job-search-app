@@ -7,7 +7,12 @@ import { BsBriefcase } from "react-icons/bs";
 export default function Home({ data }) {
     return (
         <div className="mx-3 sm:mx-20">
-            <div className="search-main h-32  flex justify-center items-center">
+            <div
+                className="search-main h-32  flex justify-center items-center"
+                style={{
+                    backgroundImage: "url(/backgroundImg.png)",
+                }}
+            >
                 <form className="h-3/6 w-11/12  1sm:w-4/6 bottom-1/2 bg-white py-4 pl-4 pr-1  flex flex-row items-center">
                     <BsBriefcase className="basis-2/12 bsbriefcase mr-4 text-2xl" />
                     <input
