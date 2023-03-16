@@ -10,7 +10,8 @@ export default function Home({ data }) {
             <div
                 className="search-main h-32  flex justify-center items-center"
                 style={{
-                    backgroundImage: "url(/backgroundImg.png)",
+                    backgroundImage:
+                        "url(/GetJob-job-search-app/backgroundImg.png)",
                 }}
             >
                 <form className="h-3/6 w-11/12  1sm:w-4/6 bottom-1/2 bg-white py-4 pl-4 pr-1  flex flex-row items-center">
